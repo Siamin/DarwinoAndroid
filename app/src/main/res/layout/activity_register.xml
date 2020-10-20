@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".activities.RegisterActivity">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_account_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/_30sdp"
+
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingRight="@dimen/_30sdp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_registerlogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatImageView"
+            android:id="@+id/phone_container">
+
+
+            <com.ahmad.darwino.CusrtomViews.MyEditText
+                android:id="@+id/phonenumber"
+                style="@style/inputFieldEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:hint="شماره همراه"
+                android:inputType="number|phone"
+                android:layout_alignParentTop="true"
+                android:drawableRight="@drawable/ic_phonenumber"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="@dimen/_20sdp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone_container"
+            android:id="@+id/email_container">
+
+            <com.ahmad.darwino.CusrtomViews.MyEditText
+                android:id="@+id/email"
+                style="@style/inputFieldEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:hint="ایمیل"
+                android:inputType="textEmailAddress"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:drawableRight="@drawable/ic_email"
+                android:paddingBottom="@dimen/_20sdp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_container"
+            android:id="@+id/password_container">
+
+            <com.ahmad.darwino.CusrtomViews.MyEditText
+                android:id="@+id/password"
+                style="@style/inputFieldEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:hint="رمز عبور"
+                android:inputType="textPassword"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:drawableRight="@drawable/ic_password"
+                android:paddingBottom="@dimen/_20sdp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_container"
+            android:id="@+id/password_container_confirm">
+
+            <com.ahmad.darwino.CusrtomViews.MyEditText
+                android:id="@+id/password_confirm"
+                style="@style/inputFieldEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:hint="تکرار رمز عبور"
+                android:inputType="textPassword"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:drawableRight="@drawable/ic_password"
+                android:paddingBottom="@dimen/_20sdp"/>
+
+        </RelativeLayout>
+
+        <com.ahmad.darwino.CusrtomViews.MyButton
+            android:id="@+id/register"
+            style="@style/formButton"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/round_primary_color_button"
+            android:text="ثبت نام"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_container_confirm" />
+
+        <com.ahmad.darwino.CusrtomViews.MyTextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="ورود به حساب کاربری"
+            style="@style/account_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+

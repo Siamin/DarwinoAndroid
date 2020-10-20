@@ -1,0 +1,59 @@
+<resources>
+	<dimen name="activity_vertical_margin">30dp</dimen>
+	<dimen name="activity_horizontal_margin">50dp</dimen>
+
+	<dimen name="activity_vertical_margin_half">15dp</dimen>
+	<dimen name="activity_horizontal_margin_half">25dp</dimen>
+
+	<dimen name="vertical_margin_30dp">30dp</dimen>
+	<dimen name="vertical_margin_75dp">75dp</dimen>
+
+	<dimen name="vertical_margin_5">5dp</dimen>
+	<dimen name="vertical_margin_6">6dp</dimen>
+	<dimen name="vertical_margin_10">10dp</dimen>
+	<dimen name="vertical_margin_12">12dp</dimen>
+	<dimen name="vertical_margin_16">16dp</dimen>
+	<dimen name="vertical_margin_20">20dp</dimen>
+	<dimen name="vertical_margin_30">30dp</dimen>
+	<dimen name="vertical_margin_40">40dp</dimen>
+	<dimen name="vertical_margin_45">45dp</dimen>
+	<dimen name="vertical_margin_60">60dp</dimen>
+	<dimen name="vertical_margin_80">80dp</dimen>
+	<dimen name="vertical_margin_100">100dp</dimen>
+	<dimen name="vertical_margin_120">120dp</dimen>
+	<dimen name="vertical_margin_160">160dp</dimen>
+
+
+	<dimen name="size_75">75dp</dimen>
+	<dimen name="size_35">35dp</dimen>
+	<dimen name="size_38">38dp</dimen>
+	<dimen name="size_45">45dp</dimen>
+	<dimen name="size_48">48dp</dimen>
+	<dimen name="size_95">95dp</dimen>
+	<dimen name="size_262">262dp</dimen>
+
+
+
+
+
+	<dimen name="size_16">16dp</dimen>
+	<dimen name="size_18">18dp</dimen>
+	<dimen name="size_22">22dp</dimen>
+	<dimen name="size_25">25dp</dimen>
+	<dimen name="size_26">26dp</dimen>
+	<dimen name="size_30">30dp</dimen>
+
+
+	<dimen name="cardview_default_radius">1dp</dimen>
+	<dimen name="cardview_default_elevation">1dp</dimen>
+
+
+
+
+
+
+
+
+
+
+</resources>

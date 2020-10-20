@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/vertical_margin_6"
+    android:background="@color/white"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:elevation="2dp">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:elevation="10dp"
+            app:cardCornerRadius="@dimen/_6sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_weight="0">
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/payment_commodity_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:transitionName="course_image"
+                app:srcCompat="@drawable/ic_pattern_6" />
+
+        </android.support.v7.widget.CardView>
+
+        <com.ahmad.darwino.CusrtomViews.MyTextView
+            android:id="@+id/payment_commodity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="نام دوره"
+            app:layout_constraintEnd_toStartOf="@+id/cardView2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:transitionName="course_title"
+            style="@style/big_text"/>
+
+        <com.ahmad.darwino.CusrtomViews.MyTextView
+            android:id="@+id/textrial"
+            style="@style/price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="تومان"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/payment_commodity_short_description"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.ahmad.darwino.CusrtomViews.RialTextView
+            android:id="@+id/payment_commodity_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="29000"
+            app:layout_constraintStart_toEndOf="@+id/textrial"
+            app:layout_constraintTop_toBottomOf="@+id/payment_commodity_short_description" />
+
+        <com.ahmad.darwino.CusrtomViews.MyTextView
+            android:id="@+id/payment_commodity_short_description"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:text="توضیحاتی مربوط به دوره  وبسایت ما دوره های آموزشی مد نظرتون …"
+            app:layout_constraintEnd_toStartOf="@+id/cardView2"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/payment_commodity_title" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>

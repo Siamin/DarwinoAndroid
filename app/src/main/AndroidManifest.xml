@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    package="com.ahmad.darwino">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tool:ignore="GoogleAppIndexingWarning"
+        tool:replace="android:icon">
+
+        <activity android:name=".activities.LoginActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activities.RegisterActivity" android:screenOrientation="portrait" />
+        <activity android:name=".SplashScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.SmsActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activities.CourseListActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activities.ChangePasswordActivity" />
+        <activity android:name=".activities.Payment_status_activity" />
+        <activity android:name=".activities.BlogActivity" />
+        <activity android:name=".activities.PaymentActivity" />
+        <activity android:name=".activities.ForgotPasswordPhoneNumberActivity" />
+        <activity android:name=".activities.CourseActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activities.HomeActivity" android:label="@string/title_activity_home" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.TestActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.ScrollingActivity" android:label="@string/title_activity_scrolling" android:theme="@style/AppTheme"/>
+        <activity android:name=".activities.DarwinoLandActivity" android:label="@string/title_activity_scrolling" android:theme="@style/AppTheme"/>
+
+
+        <meta-data android:name="DATABASE" android:value="darwino.db" />
+        <meta-data android:name="VERSION" android:value="2" />
+        <meta-data android:name="QUERY_LOG" android:value="true" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.ahmad.darwino" />
+
+    </application>
+
+</manifest>

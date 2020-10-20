@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="rtl">
+
+            <ImageView
+                android:id="@+id/payment_back_page"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_left_arrow"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="164dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="پرداخت"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/payment_back_page"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical|center_horizontal|top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_weight="1.33"
+            android:elevation="10dp"
+            app:cardCornerRadius="@dimen/_6sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="0"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="ltr"
+                android:padding="@dimen/_10sdp">
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_marginEnd="4dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="@dimen/_6sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="0"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.508">
+
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/payment_commodity_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:transitionName="course_image"
+                        app:srcCompat="@drawable/ic_pattern_6" />
+
+                </android.support.v7.widget.CardView>
+
+                <com.ahmad.darwino.CusrtomViews.MyTextView
+                    android:id="@+id/payment_commodity_title"
+                    style="@style/big_text"
+                    android:layout_width="238dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="right|center_horizontal|center_vertical"
+                    android:text="نام دوره"
+                    android:transitionName="course_title"
+                    app:layout_constraintBottom_toTopOf="@+id/payment_commodity_price"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView2"
+                    app:layout_constraintHorizontal_bias="0.72"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.857" />
+
+                <com.ahmad.darwino.CusrtomViews.RialTextView
+                    android:id="@+id/payment_commodity_price"
+                    android:layout_width="61dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="29000"
+                    android:gravity="right|center_horizontal|center_vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.13"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_horizontal|center_vertical"
+                    android:paddingRight="@dimen/_25sdp"
+                    android:text="درگاه پرداختی اینترنتی:"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/payment_gate_zarinpal"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/ic_rectangle_gary"
+                    android:padding="@dimen/_3sdp"
+                    app:srcCompat="@drawable/ic_zarinpal_logo" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:id="@+id/payment_offer_submit"
+                    android:layout_width="79dp"
+                    android:layout_height="43dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="301dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="-271dp"
+                    android:layout_marginBottom="7dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="اعمال"
+                    android:textColor="@color/centercolor" />
+
+                <EditText
+                    android:id="@+id/payment_offer_edittext"
+                    android:layout_width="302dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="27dp"
+                    android:background="@null"
+                    android:layout_marginEnd="125dp"
+                    android:layout_marginRight="@dimen/text_size_15"
+                    android:layout_marginBottom="5dp"
+                    android:drawableRight="@drawable/ic_gift"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:ems="10"
+                    android:hint="کد تخفیف را وارد کنید"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_5sdp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center_horizontal|center_vertical"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="1">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:id="@+id/payment_all_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+
+                        <com.ahmad.darwino.CusrtomViews.MyTextView
+                            android:id="@+id/text12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right|center_horizontal|center_vertical"
+                            android:padding="@dimen/_10sdp"
+                            android:text="هزینه کل:"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        <com.ahmad.darwino.CusrtomViews.RialTextView
+                            android:id="@+id/payment_price_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|left|center_vertical"
+                            android:padding="@dimen/_10sdp"
+                            android:text="20000"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/payment_off_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+
+                        <com.ahmad.darwino.CusrtomViews.MyTextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right|center_horizontal|center_vertical"
+                            android:padding="@dimen/_10sdp"
+                            android:text="تخفیف:"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        <com.ahmad.darwino.CusrtomViews.RialTextView
+                            android:id="@+id/payment_price_offer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|left|center_vertical"
+                            android:padding="@dimen/_10sdp"
+                            android:text="2000"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <com.ahmad.darwino.CusrtomViews.MyTextView
+                            android:id="@+id/textView32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right|center_horizontal|center_vertical"
+                            android:padding="@dimen/_10sdp"
+                            android:text="قابل پرداخت:"
+                            android:textSize="@dimen/_15ssp" />
+
+                        <com.ahmad.darwino.CusrtomViews.RialTextView
+                            android:id="@+id/payment_price_final"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|left|center_vertical"
+                            android:padding="@dimen/_10sdp"
+                            android:text="2500"
+                            android:textSize="@dimen/_15ssp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/payment_show_money"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/circle_black"
+                android:padding="@dimen/_10sdp"
+                android:rotation="180"
+                app:layout_anchor="@id/ll"
+                app:layout_anchorGravity="center_horizontal"
+                app:srcCompat="@drawable/ic_down_arrow_in_small_black" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <TextView
+            android:id="@+id/payment_ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@color/centercolor"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="تایید و ادامه پرداخت"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

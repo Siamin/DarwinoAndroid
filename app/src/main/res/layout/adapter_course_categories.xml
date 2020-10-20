@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_border_background"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp">
+
+    <CheckBox
+        android:id="@+id/category_cheked"
+        android:layout_width="@dimen/_19sdp"
+        android:layout_height="@dimen/_19sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:button="@drawable/checkbox"
+        android:checked="false"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <com.ahmad.darwino.CusrtomViews.MyTextView
+        android:id="@+id/category_name"
+        style="@style/medium_text"
+        android:layout_width="342dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:gravity="center_vertical|center_horizontal|right"
+        android:paddingRight="@dimen/_10sdp"
+        android:layout_toEndOf="@+id/category_cheked"
+        android:text="دسته بندی"
+        android:textSize="@dimen/_13sdp" />
+
+</RelativeLayout>

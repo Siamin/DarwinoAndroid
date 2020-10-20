@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="text_size_10">@dimen/_10ssp</dimen>
+    <dimen name="text_size_11">@dimen/_11ssp</dimen>
+    <dimen name="text_size_13">@dimen/_13ssp</dimen>
+    <dimen name="text_size_14">@dimen/_14ssp</dimen>
+    <dimen name="text_size_15">@dimen/_15ssp</dimen>
+    <dimen name="text_size_16">@dimen/_16ssp</dimen>
+    <dimen name="text_size_17">@dimen/_17ssp</dimen>
+    <dimen name="text_size_22">@dimen/_22ssp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+
+
+</resources>
